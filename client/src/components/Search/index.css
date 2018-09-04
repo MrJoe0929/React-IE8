@@ -1,0 +1,46 @@
+.ant-input-group-addon:last-child {
+    border-left: 0;
+    background-color: #1890ff;
+    border-color: #1890ff;
+    color: #fff;
+}
+
+#searchBox{
+    position: relative;
+    width: 100%;
+}
+.searchList{
+    position: absolute;
+    top: 28px;
+    max-height: 450px;
+    overflow: hidden;
+    overflow-y: auto;
+    width: calc(100% - 6px);
+    margin-left: 3px;
+    border: 1px solid #ccc;
+    border-top: 0;
+    padding: 5px 0;
+    z-index: 99;
+    background: #fff;
+}
+.searchList li{
+    padding: 2px 5px;
+    margin: 3px 0;
+}
+.searchList li b{
+    color: orange;
+}
+.searchList li:hover{
+    background: #ccc;
+}
+.searchList li p, .searchList li h2{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.searchList-show{
+    display: block;
+}
+.searchList-hide{
+    display: none;
+}
