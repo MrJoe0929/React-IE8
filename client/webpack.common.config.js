@@ -75,7 +75,8 @@ commonConfig = {
             pages: path.join(__dirname, 'src/pages'),
             components: path.join(__dirname, 'src/components'),
             routerConfig: path.join(__dirname, 'src/routerConfig'),
-            static: path.join(__dirname, 'src/static')
+            static: path.join(__dirname, 'src/static'),
+            antdModule: path.join(__dirname, 'src/antdModule') // antd
         }
     }
 };

@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 let list = require('components/childCust/index.js');
 import './index.css';
 import { BackTop } from 'antd';
+import { Anchor } from 'antdModule/index.js';
+import 'antdModule/Anchor/style/css.js'
+const { Link } = Anchor;
 
 class custList extends Component {
     constructor(props){
@@ -22,14 +25,16 @@ class custList extends Component {
                     })
                     
                 }
-                <div id="Anchor">
-                    {
-                        list.custList.map((val, key) => {
-                            return (
-                                <a key={key} href={'#form' + (key + 1)}>{val.context}</a>
-                            ) 
-                        })
-                    }
+                <div id="myAnchor">
+                    <Anchor showInkInFixed="true">
+                        {
+                            list.custList.map((val, key) => {
+                                return (
+                                    <Link key={key} href={'#form' + (key + 1)} title={val.context} />
+                                ) 
+                            })
+                        }
+                    </Anchor>
                 </div>
                 <BackTop />
             </div>

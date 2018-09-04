@@ -2,13 +2,9 @@
     width: 100%;
     height: 500px;
 }
-#Anchor{
+#myAnchor{
     position: fixed;
     top: 0;
     right: 30px;
     width: 100px;
-}
-#Anchor a{
-    float: left;
-    width: 100%;
 }
